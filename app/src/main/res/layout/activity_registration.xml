@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_userreg"
+        android:text="User Registration (1 of 4)"
+        android:layout_weight="0.30" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="First Name"
+        android:id="@+id/textView_firstname"
+        android:layout_below="@+id/editText_userreg"
+        android:layout_alignLeft="@+id/editText_firstname"
+        android:layout_alignStart="@+id/editText_firstname" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_firstname"
+        android:layout_below="@+id/textView_firstname"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Last Name"
+        android:id="@+id/textView_lastname"
+        android:layout_below="@+id/editText_firstname"
+        android:layout_alignLeft="@+id/editText_lastname"
+        android:layout_alignStart="@+id/editText_lastname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_lastname"
+        android:layout_below="@+id/textView_lastname"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textview_dob"
+        android:text="Date of Birth"
+        android:layout_below="@+id/editText_lastname"
+        android:layout_alignLeft="@+id/textView_lastname"
+        android:layout_alignStart="@+id/textView_lastname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|date"
+        android:ems="10"
+        android:id="@+id/editText_dob"
+        android:layout_above="@+id/textView_contactNum"
+        android:layout_alignLeft="@+id/textview_dob"
+        android:layout_alignStart="@+id/textview_dob" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_next1"
+        android:text="Next Step"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Contact Number"
+        android:id="@+id/textView_contactNum"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editText_dob"
+        android:layout_alignStart="@+id/editText_dob" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_contactNum"
+        android:inputType="number"
+        android:layout_below="@+id/textView_contactNum"
+        android:layout_alignLeft="@+id/textView_contactNum"
+        android:layout_alignStart="@+id/textView_contactNum"
+        android:layout_alignRight="@+id/editText_lastname"
+        android:layout_alignEnd="@+id/editText_lastname" />
+
+
+</RelativeLayout>
